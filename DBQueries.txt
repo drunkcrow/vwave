@@ -1,0 +1,66 @@
+CREATE TABLE `users` ( 
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `oauth_provider` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+ `oauth_uid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `first_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+ `last_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+ `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `gender` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `locale` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `picture` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `link` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ `created` datetime NOT NULL,
+ `modified` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `usernames` (
+ `id` int(11) NOT NULL,
+ `nickname` varchar(50) NOT NULL,
+ PRIMARY KEY (`id`),
+ FOREIGN KEY (`id`) REFERENCES users(`id`)
+);
+
+CREATE TABLE `images` (
+ `id` int(11) NOT NULL,
+ `etag` varchar(50) NOT NULL,
+ `keyname` varchar(512) NOT NULL,
+ `title` varchar(50) NOT NULL,
+ `caption` tinytext,
+ `created` datetime NOT NULL,
+ `likes` int(11),
+ CONSTRAINT img_key PRIMARY KEY (`keyname`),
+ FOREIGN KEY (`id`) REFERENCES users(`id`)
+);
+
+CREATE TABLE `comments` (
+ `comment_id` int(11) NOT NULL AUTO_INCREMENT,
+ `image_id` varchar(512) NOT NULL,
+ `user_id` int(11) NOT NULL,
+ `comment` text,
+ `created` datetime,
+ CONSTRAINT comment_key PRIMARY KEY (`comment_id`),
+ FOREIGN KEY (`image_id`) REFERENCES images(`keyname`),
+ FOREIGN KEY (`user_id`) REFERENCES users(`id`)
+);
+
+CREATE TABLE `galleries` (
+ `user_id` int(11) NOT NULL,
+ `galleries` varchar(50) NOT NULL,
+ CONSTRAINT gallery_key PRIMARY KEY (`user_id`, `galleries`),
+ FOREIGN KEY (`user_id`) REFERENCES users(`id`)
+);
+
+CREATE TABLE `tags`( 
+ 
+`tag_id` int(11) NOT NULL AUTO_INCREMENT, 
+ 
+`keyname` VARCHAR(512) NOT NULL,
+ 
+`tag` VARCHAR(100) NOT NULL,
+
+ PRIMARY KEY (`tag_id`),
+ 
+FOREIGN KEY (`keyname`) REFERENCES images(`keyname`)
+ 
+); 
