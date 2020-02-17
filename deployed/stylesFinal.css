@@ -1,0 +1,713 @@
+html, body, header, footer, main, nav, article, section, figure, figcaption, h1, h2, h3, ul, li,
+body, div, p, img
+{ margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; border: 0; }
+
+/* main */
+main {
+  background: none !important;
+}
+
+/* input stytles for "sign up" and "Login" buttons*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: mediumpurple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(87, 32, 87);
+}
+
+/* Contact Page */
+.containerContact{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
+
+
+/* Style for website footer */
+.footer {
+  font-family: Tinos;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(89, 0, 124);
+  color: white;
+  text-align: center;
+}
+
+.inner {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.inner h1 {
+  color: white;
+  font-size: 5em;
+}
+
+.navbar {
+  background-image: url(images/bgimage2.png);
+  background-position: center center;
+  margin-bottom: 0;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.navbar-nav a {
+  color: white;
+  font-family: Tinos;
+  font-size: 1.2em;
+}
+
+.navbar-nav button {
+  background-color: mediumpurple;
+  color: white;
+  font-family: Tinos;
+}
+
+.collapse button:hover {
+  color: #663399;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(255,255,255);
+} 
+#dropdown {
+  position: relative;
+  display: inline-block;
+  color:#495057;border-color:#dee2e6 #dee2e6 #fff
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+
+footer {
+    padding: 3px;
+}
+footer nav {
+    margin-top: .5em;
+    margin-left: .7em;
+}
+footer nav a{
+    margin: 0 .5em 0em .5em;
+}
+
+footer nav ul {
+    list-style: none;
+}
+header nav ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer p {
+    font-style:italic;
+}
+
+h1 {
+    font-size: 220%;
+    margin-bottom: 10px;
+    font-family: Alien Encounters I;
+}
+
+h3,h2 {
+    background-color: mediumpurple;
+    padding : 10px;
+    font-size: large;
+    color: white;
+    font-family: "Open Sans";
+    margin: 0em 0em 0em 0em;
+}
+
+header nav li {
+    padding: 4px;
+    display: inline-block;
+}
+
+header nav li .dropdown {
+    padding-left: none;
+    display: inline-block;
+}
+
+header nav li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+header nav li .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+header nav li .dropdown:hover .dropdown-content {
+    display: block;
+}
+/* dropdown */
+.dropdown-menu a:hover {
+  background-color: mediumpurple !important;
+  color: white !important;
+}
+
+html {
+    background-color: rebeccapurple;
+    background-image: url(images/background.png);
+    background-position: center;
+    height: 100%;
+}
+
+body {
+    background-color: rebeccapurple;
+    background-image: url(images/background.png);
+    background-position: center;
+    height: 100%;
+}
+
+p {
+    font-family: serif;
+    margin: 1em 1em 1em 1em; 
+}
+p img {
+    vertical-align: top;
+}
+
+article {
+    background-color: white;
+    margin: .5em 4em 0.25em 4em;
+    padding: 1px;
+}
+section {
+    margin: 1em 1em 1em 1em;
+   /* border: solid 1pt #C5CAE9;*/
+    border: solid 1pt black;
+}
+
+time {
+    color: #FF80AB;
+}
+
+figcaption {
+    font-style: italic;
+    font-family: Tinos;
+    margin: 0;
+    padding: 5px;
+    font-size: 120%;
+    color:black;
+    background-color: #FD01FF;
+}
+
+figure {
+    background-color: #663399;
+}
+
+figure img {
+    width: 100%;
+}
+
+hr {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+#imageSolo {
+    padding:100px;
+    width: auto;
+    filter: drop-shadow(5px 5px 5px black);
+
+}
+
+#imageSolo h2 {
+    background-color: #4B0082;
+    font-family: Tinos;
+    font-size: 110%;
+
+}
+
+.padThis {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.underHeader {
+    font-family: Alien Encounters S;
+    font-size: 100%;
+    margin: 0;
+}
+
+.related {
+    margin: 0;
+}
+.leftHead {
+    float:right;
+}
+
+.wrapper{
+	width: 340px;
+	margin: auto;
+	padding: 10px;
+    background-color: #663399;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    text-align: center;
+}
+.wrapper h2{
+	font-family: Alien Encounters;
+	font-size: 150%;
+}
+.wrapper img{
+	max-width: 100%;
+}
+.ac-data{
+    text-align: left;
+}
+
+/* uploadPage */
+.wrapacct{
+	margin: auto;
+	padding: 10px;
+    background-color: #663399;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
+
+.wrapacct h2{
+	font-family: Alien Encounters;
+	font-size: 150%;
+}
+
+.wrapacct .btn {
+  background-color: #663399;
+  color: white;
+}
+
+.center {
+  width: 340px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* uploadPage*/
+.acctform {
+  font-family: Tinos;
+  padding: 10px;
+  text-align: left;
+  background-color: mediumpurple;
+}
+
+.acctform textarea {
+  font-family: Tinos;
+}
+
+a:link {
+  font-family: Tinos;
+  text-decoration: none;
+}
+
+a:visited {
+ font-family: Tinos;
+ text-decoration: none;
+}
+
+a:active {
+ font-family: Tinos;
+ text-decoration: underline;
+}
+
+.acct {
+    background-color: mediumpurple;
+    padding: 10px;
+    font-family: Tinos;
+    margin: 0em 0em 0em 0em;
+}
+
+.acct p {
+  font-size: 1.1em;
+}
+
+.acct a {
+  font-family: Tinos;
+  font-size: 1.1em;
+  color: white;
+}
+
+.acct a:hover {
+  color: #663399;
+}
+
+.count {
+  font-family: Tinos;
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+
+.imgInfo {
+  background-color: mediumpurple;
+  font-family: Tinos;
+  font-size: 1.1em;
+  padding: .5em !important;
+  margin: 0em 0em 0em 0em;
+}
+
+.imgInfo {
+  color: white;
+}
+
+.imgInfo form {
+  font-family: Tinos;
+}
+
+.imgInfo a {
+  font-family: Tinos;
+  font-size: 1.1em;
+  color: white;
+}
+
+.imgInfo a:hover {
+  color: #663399;
+}
+
+
+/* gal modal id homephp*/
+#galModal .modal-content {
+  background-color: #663399 !important;
+}
+
+#galModal h5 {
+  font-family: Alien Encounters !important;
+  color: white !important;
+}
+
+/* cat modal id imageDisplay.php*/
+#catModal .modal-content {
+  background-color: #663399 !important;
+}
+
+#catModal h5 {
+  font-family: Alien Encounters !important;
+  color: white !important;
+}
+
+/* jumbotron home.php*/
+.jumbotron {
+  background-color: #663399 !important;
+}
+
+.jumbotron .container h2 {
+  font-size: 200%;
+  font-family: Alien Encounters;
+}
+
+.jumbotron .btn {
+  background-color: mediumpurple !important; 
+  font-family: Tinos !important;
+  color: white !important;
+}
+
+.jumbotron h1 {
+  color: white;
+  background-color: mediumpurple;
+}
+
+.jumbotron p {
+  color: white;
+  font-family: Alien Encounters;
+  font-size: 1.5em;
+}
+
+.img-thumbnail {
+  vertical-align: middle;
+}
+
+.friends {
+  background-color: mediumpurple;
+}
+
+.friends a {
+  color: white;
+  font-family: Tinos;
+  padding: 1em;
+}
+
+.friends a:hover {
+  color: #663399 !important;
+  background-color: transparent !important;
+}
+
+.friends p {
+  color: white;
+  font-family: Tinos;
+}
+
+.friends .btn {
+  background-color: #663399;
+  color: white;
+  font-family: Tinos;
+}
+
+@media screen and (min-width: 601px) {
+  .friends a {
+    font-size: 1.5em;
+  }
+  .friends p {
+    font-size: 1.5em;
+  }
+  .friends .img-thumbnail {
+    height: 4em;
+    width: 4em;
+  }
+  .friends {
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .friends a {
+    font-size: 1em;
+  }
+  .friends p {
+    font-size: 1em;
+  }
+  .friends .img-thumbnail {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .friends {
+    padding-top: .8em;
+    padding-bottom: .8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    width: 90%;
+    margin: auto;
+  }
+  .jumbotron h1 {
+    font-size: 2.2em;
+  }
+  .jumbotron p {
+    font-size: 1.1em;
+  }
+  .imgInfo {
+    font-size: .9em;
+  }
+}
+
+/* container home.php/uploadPage */
+.container h2 {
+  font-family: Alien Encounters;
+  font-size: 150%;
+}
+
+@media (min-width: 768px) {
+  .container-small {
+      width: 400px;
+  }
+  .container-large {
+      width: 970px;
+  } 
+} 
+@media (min-width: 992px) {
+  .container-small {
+      width: 400px;
+  }
+  .container-large {
+      width: 1170px;
+  } 
+} 
+@media (min-width: 1200px) {
+  .container-small {
+      width: 500px;
+  }
+  .container-large {
+      width: 1500px;
+  } 
+}
+
+.container-small, .container-large {
+  max-width: 100%;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Gallery */
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; 
+}
+  
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; 
+}
+  
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); 
+}
+
+.gallery p {
+  text-align: center;
+  font-family: Streamster;
+  font-size: 200%;
+  color: white;
+}
+
+.gallery img:hover {
+  transition:0.25s;
+  filter:drop-shadow(5px 5px 2px black);
+}
+
+.gallery a:hover {
+  background-color: transparent !important;
+}
+  
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }  
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*Canvas*/
+
+.canvas-container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.literally {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#uploadModal .modal-content {
+  background-color: #663399 !important;
+}
+
+#uploadModal h5 {
+  font-family: Alien Encounters !important;
+  color: white !important;
+}
+
+#newModal .modal-content {
+  background-color: #663399 !important;
+}
+
+#newModal h5 {
+  font-family: Alien Encounters !important;
+  color: white !important;
+}
+
+#newCanvasModal .modal-content {
+  background-color: #663399 !important;
+}
+
+#newCanvasModal h5 {
+  font-family: Alien Encounters !important;
+  color: white !important;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/* Fonts*/
+
+
+@font-face {
+font-family: Alien Encounters;
+src: url("css/fonts/alien_encounters/Alien-Encounters-Regular.ttf");
+}
+
+@font-face {
+font-family: Alien Encounters I;
+src: url("css/fonts/alien_encounters/Alien-Encounters-Bold-Italic.ttf");
+}
+
+@font-face {
+font-family: Alien Encounters S;
+src: url("css/fonts/alien_encounters/Alien-Encounters-Solid-Regular.ttf");
+}
+
+@font-face {
+font-family: Alien Encounters B;
+src: url("css/fonts/alien_encounters/Alien-Encounters-Bold.ttf");
+}
+
+@font-face {
+font-family: Tinos;
+src: url("css/fonts/Tinos/Tinos-Regular.ttf");
+}
+
+@font-face {
+font-family: Streamster;
+src: url("css/fonts/streamster/Streamster.ttf");
+}
+
+@font-face {
+font-family: Otsutome;
+src: url("css/fonts/Othutome_font_ver2/OtsutomeFont_Ver2.ttf");
+}
